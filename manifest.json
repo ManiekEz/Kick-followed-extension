@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Kick",
+    "version": "1.0.0",
+    "sidebar_action": {
+        "default_icon": "/images/kick128.png",
+        "default_title": "Kick",
+        "default_panel": "index.html"
+    },
+    "icons": {
+      "128": "images/kick128.png",
+      "16": "images/kick16.png",
+      "48": "images/kick48.png"
+    },
+    "permissions": [
+        "cookies",
+        "tabs",
+        "storage",
+        "scripting",
+        "alarms"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "host_permissions": ["<all_urls>"],
+    "action": {}
+  }

@@ -1,0 +1,37 @@
+#footer{
+    height: 70px;
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: solid 1px gray;
+    background-color: #121019;
+    z-index: 99;
+    /* Add some nice gradient or something */
+}
+#goKick:hover {
+    /* background:#4a3e65; */
+    background: rgba(218, 218, 218, 0.2);
+}
+    #goKick{
+        display: block;
+        background-color: red;
+        width: 90%;
+        height: 70%;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: solid 1px gray;
+        border-radius: 5px;
+        background: rgba(218, 218, 218, 0.1);
+    }
+    #goKick > span{
+        font-size: 150%;
+        font-weight: 500;
+    }
+    

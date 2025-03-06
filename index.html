@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css">
+    <link rel="Stylesheet" href="css/logInStyle.css">
+    <!-- <script type="module" src="shared.js"></script> -->
+    <script type="module" src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_content">
+        <div id="title">
+            <h1 class="kick_text">KICK</h1>
+            <hr class = "left hr_style"/>
+            <hr class = "right hr_style"/>
+        </div>
+        <div id="header">  
+            <span id="profile_title" class="simple_title" >Your profile: </span>
+            <div id="profile"> <!-- May change if the setting tab will be added -->
+                <img id="profile_picture" src="images/default_profile_pic.png">
+                <span id="nick">Nick</span>
+                <span id="followers">Followers: 0</span>
+            </div>
+        </div>
+
+        <div id="streams" class="main">
+            <!-- Templates for JS -->
+            <template>
+                <a id="stream" href="https://kick.com" target="_blank" title="Name - title" name="name">
+                    <img id="channelPic" src="/images/default_profile_pic.png">
+                    <img id="category" src="/images/justchatting.jpg">
+                </a>
+            </template> 
+            <!-- Visable part of this element -->
+             <div id="streams_header">
+                <span class="simple_title">Followed channels: </span>
+                <input id="search" type="text" placeholder="Filter">
+             </div>
+             <div id="streams_list">
+                <!-- Streams will be added here -->
+             </div>
+        </div>
+        <div id="footer">
+            <a id="goKick" target="_blank" href="https://kick.com">
+                <span class="kick_text">GO TO KICK</span>
+            </a>
+        </div> 
+    </div>
+</body>
+</html>
